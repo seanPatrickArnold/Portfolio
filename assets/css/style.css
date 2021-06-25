@@ -57,6 +57,10 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 
+h2 {
+  border-bottom: 2px solid bisque;
+}
+
 section {
   display: flex;
   align-items: center;
@@ -67,7 +71,6 @@ section {
 }
 
 article {
-  flex-wrap: wrap;
 }
 
 img {
