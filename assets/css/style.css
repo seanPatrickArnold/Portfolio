@@ -1,34 +1,41 @@
 body {
   background-color: purple;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
 }
 
 header {
   padding: 20px 35px;
   background-color: var(--tertiary-color);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
   background-image: url("../images/hero-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-position: 80%;
   z-index: 9999;
+  width: 95%;
+  min-width: 95%;
 }
 
 header h1 {
   font-weight: bold;
   margin: 0;
   font-size: 56px;
-  color: var(--primary-color);
+  color: beige;
+  font-size: 7vw;
+}
+
+header h1:hover {
+  color: lime;
+  text-shadow: 0 0 10px beige;
 }
 
 header a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: bisque;
 }
 
 header nav {
@@ -46,98 +53,207 @@ header nav ul {
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 48px;
+  font-size: 5vw;
   text-shadow: none;
 }
 header nav ul li a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
+  color: cyan;
   border-radius: 15px;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px beige;
 }
 
 h2 {
   font-size: 36px;
 }
 
-section div {
+#aboutTheAuthor {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+#aboutTheAuthor div {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding: 30px;
+  border: 5px double blueviolet;
+  border-style: ridge;
+  width: 95%;
+  margin: 10px;
+  opacity: 0.7;
+}
+
+section h2 {
+  width: 100%;
+  color: rgba(52, 199, 155, 0.596);
+  text-shadow: 0 0 10px cadetblue;
+  background-color: blueviolet;
 }
 
 article h3 {
   font-size: 24px;
-  max-width: 25%;
+  color: blueviolet;
+  text-shadow: 0 0 10px cadetblue;
+  background-color: cornflowerblue;
 }
 
 h2 {
   border-bottom: 2px solid bisque;
+  font-size: 5vw;
+  width: 100%;
 }
 
-section {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px;
-  font-size: 1.55vw;
+h3 {
+  font-size: 4vw;
 }
 
-article img {
-  flex: 1 50%;
-  width: 25%;
-  max-width: 40%;
+article {
+  flex: 2;
 }
 
-article img:hover {
+article a img:hover {
   box-shadow: 5px 10px palevioletred;
   opacity: 50%;
 }
 
+#aboutTheAuthor article {
+  flex: 2;
+  min-width: 40%;
+}
+
 #authorPhoto {
-  width: 500px;
-  max-width: 20%;
-  min-width: 300px;
+  flex: 1;
+  max-width: 500px;
+  max-height: 667px;
+  border: 3px solid palevioletred;
 }
 
 p {
   flex: 50%;
-  max-width: 40%;
-  font-size: 18px;
+  font-size: 3vw;
 }
 
-#run-buddy h3 {
-  max-width: 50%;
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-#run-buddy-image {
-  width: 70%;
-  max-width: 1000px;
+#run-buddy {
+  width: 45%;
+}
+
+#horiseon-chiliwagoncomics {
+  width: 45%;
+}
+
+#projects div h3 {
+  width: 100%;
+}
+
+#projects div article {
+  min-width: 50%;
+}
+
+#projects div article a img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
 }
 
 footer h2 {
   font-size: 20px;
+  width: 100%;
 }
 
-@media screen and (max-width: 575px) {
-  header h1 {
-    font-size: 5vw;
+@media screen and (min-width: 2400px) {
+  section {
+    max-width: 45%;
+    padding: 30px;
   }
 
-  #authorPhoto {
-    width: 70%;
-    max-width: 70%;
-    min-width: 70%;
+  header h1 {
+    font-size: 136px;
   }
 
   header nav ul li a {
-    font-size: 4vw;
+    font-size: 90px;
+  }
+
+  #aboutTheAuthor article p {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #horiseon-chiliwagoncomics article {
+    width: 50%;
+  }
+
+  #aboutTheAuthor article p {
+    font-size: 60px;
+  }
+
+  #projects div h3 {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #run-buddy {
+    width: 100%;
+  }
+
+  #horiseon-chiliwagoncomics {
+    width: 100%;
+  }
+
+  #horiseon-chiliwagoncomics article {
+    width: 45%;
+  }
+
+  #aboutTheAuthor article p {
+    font-size: 60px;
+  }
+
+  #projects div h3 {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+
+  #authorPhoto {
+    width: 90%;
+  }
+
+  header nav ul li a {
+    font-size: 30px;
   }
 
   h2 {
-    font-size: 4vw;
+    font-size: 36px;
   }
 
   h3 {
-    font-size: 3vw;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  p {
+    font-size: 20px;
   }
 }
