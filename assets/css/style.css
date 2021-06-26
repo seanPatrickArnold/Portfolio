@@ -79,29 +79,28 @@ h2 {
 
 section {
   padding: 30px;
-  border: 5px double blueviolet;
+  border: 5px double rgba(137, 43, 226, 0.527);
   border-style: ridge;
   width: 95%;
   margin: 10px;
-  opacity: 0.7;
 }
 
 section h2 {
   width: 100%;
   color: rgba(52, 199, 155, 0.596);
   text-shadow: 0 0 10px cadetblue;
-  background-color: blueviolet;
+  background-color: rgba(137, 43, 226, 0.589);
 }
 
 article h3 {
   font-size: 24px;
-  color: blueviolet;
-  text-shadow: 0 0 10px cadetblue;
-  background-color: cornflowerblue;
+  color: rgba(0, 255, 0, 0.575);
+  text-shadow: 0 0 10px blueviolet;
+  background-color: rgba(74, 4, 88, 0.541);
 }
 
 h2 {
-  border-bottom: 2px solid bisque;
+  border-bottom: 2px solid rgba(255, 228, 196, 0.493);
   font-size: 5vw;
   width: 100%;
 }
@@ -144,22 +143,57 @@ p {
 
 #run-buddy {
   width: 45%;
+  flex: 2;
 }
 
 #horiseon-chiliwagoncomics {
   width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
-#projects div h3 {
+#horiseon-chiliwagoncomics article {
+  min-width: 100%;
+  padding: 10px;
+}
+
+#horiseon-chiliwagoncomics article h3 {
+  max-width: 100%;
+}
+
+#horiseon-chiliwagoncomics article a {
+  max-width: 100%;
+}
+
+#horiseon-chiliwagoncomics article a img {
+  max-width: 100%;
+}
+
+#projects div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+}
+
+#projects div article h3 {
   width: 100%;
-}
-
-#projects div article {
-  min-width: 50%;
 }
 
 #projects div article a img {
   width: 100%;
+  border: 4px solid slateblue;
+}
+
+#contactInfo div h3 {
+  font-size: 20px;
+}
+
+#contactInfo div p {
+  font-size: 20px;
 }
 
 footer {
@@ -191,10 +225,6 @@ footer h2 {
 }
 
 @media screen and (min-width: 1000px) {
-  #horiseon-chiliwagoncomics article {
-    width: 50%;
-  }
-
   #aboutTheAuthor article p {
     font-size: 60px;
   }
@@ -206,15 +236,27 @@ footer h2 {
 
 @media screen and (max-width: 1000px) {
   #run-buddy {
-    width: 100%;
+    min-width: 100%;
   }
 
   #horiseon-chiliwagoncomics {
-    width: 100%;
+    min-width: 100%;
   }
 
   #horiseon-chiliwagoncomics article {
-    width: 45%;
+    min-width: 45%;
+  }
+
+  #horiseon-chiliwagoncomics article h3 {
+    min-width: 100%;
+  }
+
+  #horiseon-chiliwagoncomics article a {
+    min-width: 100%;
+  }
+
+  #horiseon-chiliwagoncomics article a img {
+    min-width: 100%;
   }
 
   #aboutTheAuthor article p {
