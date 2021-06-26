@@ -70,16 +70,16 @@ article h3 {
   max-width: 25%;
 }
 
-div {
+h2 {
+  border-bottom: 2px solid bisque;
+}
+
+section {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
   font-size: 1.55vw;
-}
-
-article {
-  flex-wrap: wrap;
 }
 
 article img {
