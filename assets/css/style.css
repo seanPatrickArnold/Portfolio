@@ -26,11 +26,11 @@ header h1 {
   font-size: 56px;
   color: beige;
   font-size: 7vw;
+  text-shadow: 0 0 4px blanchedalmond;
 }
 
 header h1:hover {
-  color: lime;
-  text-shadow: 0 0 10px beige;
+  text-shadow: 0 0 7px beige;
 }
 
 header a {
@@ -72,6 +72,11 @@ h2 {
   width: 100%;
 }
 
+#aboutTheAuthor {
+  color: bisque;
+  text-shadow: 0 0 10px violet;
+}
+
 #aboutTheAuthor div {
   display: flex;
   justify-content: center;
@@ -87,8 +92,8 @@ section {
 
 section h2 {
   width: 100%;
-  color: rgba(52, 199, 155, 0.596);
-  text-shadow: 0 0 10px cadetblue;
+  color: cyan;
+  text-shadow: 0 0 10px beige;
   background-color: rgba(137, 43, 226, 0.589);
 }
 
@@ -121,6 +126,20 @@ article a img:hover {
 #aboutTheAuthor article {
   flex: 2;
   min-width: 40%;
+}
+
+#aboutTheAuthor h2 {
+  background-image: url("../images/bio.png");
+  color: cyan;
+}
+
+#projects h2 {
+  background-image: url("../images/projects.png");
+}
+
+#contactInfo {
+  background-image: url("../images/contactInfo.png");
+  opacity: 0.9;
 }
 
 #authorPhoto {
@@ -157,12 +176,11 @@ p {
 
 #horiseon-chiliwagoncomics article {
   min-width: 100%;
-  padding: 10px;
 }
 
 #horiseon-chiliwagoncomics article h3 {
   max-width: 100%;
-  font-size: 1.5vmin;
+  font-size: 2.5vmin;
 }
 
 #horiseon-chiliwagoncomics article a {
@@ -196,13 +214,13 @@ p {
 #contactInfo div h3 {
   font-size: 24px;
   font-weight: bold;
-  color: antiquewhite;
+  color: cyan;
   text-shadow: 0 0 10px black;
 }
 
 #contactInfo div p {
   font-size: 20px;
-  color: blanchedalmond;
+  color: antiquewhite;
   text-shadow: 0 0 10px black;
 }
 
@@ -218,6 +236,7 @@ footer h2 {
 #contactInfo div p span {
   font-size: 18px;
   font-weight: bold;
+  color: blanchedalmond;
 }
 
 @media screen and (min-width: 2400px) {
@@ -257,7 +276,7 @@ footer h2 {
   }
 
   #projects div article h3 {
-    font-size: 1vw;
+    font-size: 1.5vw;
   }
 
 
@@ -290,8 +309,8 @@ footer h2 {
     font-size: 60px;
   }
 
-  #projects div h3 {
-    font-size: 1.5vw;
+  #projects div article h3 {
+    font-size: 2vw;
   }
 }
 
@@ -318,6 +337,10 @@ footer h2 {
 
   h3 {
     font-size: 30px;
+  }
+
+  #projects div article h3 {
+    font-size: 2.5vw;
   }
 }
 
